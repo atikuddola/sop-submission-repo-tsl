@@ -3,12 +3,14 @@
 Primary (Master) → Standby (Slave)
 
 OS: AlmaLinux OS
+
 Version: PostgreSQL 18  
 Replication Type: Physical Streaming Replication  
 Primary IP: 192.168.122.107  
 Standby IP: 192.168.122.237  
 
 ---
+<img width="1413" height="825" alt="Postgres Streaming Replication" src="https://github.com/user-attachments/assets/d9ec4bd6-4588-4ab3-aa04-69a7192148a1" />
 
 # 1. Overview
 
