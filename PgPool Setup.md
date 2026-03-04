@@ -1,5 +1,8 @@
 # pgpool-II Setup & Configuration Guide
 
+<img width="691" height="321" alt="pgpool" src="https://github.com/user-attachments/assets/ed91f47a-8759-42ba-95ea-46228b53a064" />
+
+
 ## Prerequisites
 
 ### Enable CRB Repository & Install Dependencies
