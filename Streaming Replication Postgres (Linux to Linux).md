@@ -10,7 +10,8 @@ Primary IP: 192.168.122.107
 Standby IP: 192.168.122.237  
 
 ---
-<img width="1413" height="825" alt="Postgres Streaming Replication" src="https://github.com/user-attachments/assets/d9ec4bd6-4588-4ab3-aa04-69a7192148a1" />
+<img width="1413" height="825" alt="Postgres Streaming Replication drawio" src="https://github.com/user-attachments/assets/cc7675ee-4539-4804-a146-918e2cbf08b2" />
+
 
 # 1. Overview
 
