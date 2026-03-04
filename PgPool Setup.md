@@ -153,7 +153,7 @@ echo "atik:$(pg_md5 asd)" >> /etc/pgpool-II/pcp.conf
 
 ```bash
 # Run as postgres user
-echo "strong_password" > ~/.pgpoolkey
+echo "asd" > ~/.pgpoolkey
 chmod 600 ~/.pgpoolkey
 ```
 
@@ -163,10 +163,10 @@ chmod 600 ~/.pgpoolkey
 pg_enc -m -k ~/.pgpoolkey -u pgpool -p
 ```
 
-### Step 3 — (Optional) Register Additional Users
+### Step 3 — Register PCP Users
 
 ```bash
-pg_enc -m -k ~/.pgpoolkey -u samrat -p
+pg_enc -m -k ~/.pgpoolkey -u atik -p
 ```
 
 ### Step 4 — Verify the Password File
@@ -257,7 +257,7 @@ If `SHOW pool_nodes` shows a node as `down`, reattach it using the PCP interface
 
 ```bash
 # As postgres user
-pcp_attach_node -U samrat -W -h 192.168.109.130 -p 9898 -n 1
+pcp_attach_node -U atik -W -h 192.168.109.130 -p 9898 -n 1
 ```
 
 Then restart pgpool if needed:
