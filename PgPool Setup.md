@@ -249,19 +249,3 @@ psql -h 192.168.122.247 -p 9999 -U pgpool -d postgres
 
 ---
 
-## Troubleshooting
-
-### Reattach a Down Node
-
-If `SHOW pool_nodes` shows a node as `down`, reattach it using the PCP interface:
-
-```bash
-# As postgres user
-pcp_attach_node -U atik -W -h 192.168.109.130 -p 9898 -n 1
-```
-
-Then restart pgpool if needed:
-
-```bash
-sudo systemctl restart pgpool
-```
