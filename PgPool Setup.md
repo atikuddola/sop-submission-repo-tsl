@@ -1,6 +1,7 @@
 # pgpool-II Setup & Configuration Guide
 
-<img width="691" height="321" alt="pgpool" src="https://github.com/user-attachments/assets/ed91f47a-8759-42ba-95ea-46228b53a064" />
+<img width="850" height="1100" alt="pgpool (1)" src="https://github.com/user-attachments/assets/6716c5e1-f90b-4e71-8430-7a1a106e0b0d" />
+
 
 
 ## Prerequisites
