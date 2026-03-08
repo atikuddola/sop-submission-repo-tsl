@@ -160,7 +160,7 @@
 | `-v` | `grep -v "INFO" app.log` | Invert — show lines that do NOT match |
 | `-A` | `grep -A 3 "FATAL" error.log` | Show N lines after each match (context) |
 | `-B` | `grep -B 3 "FATAL" error.log` | Show N lines before each match |
-| `-E` | `grep -E "ERROR"|"WARN" app.log` | Use extended regex (match multiple patterns) |
+| `-E` | `grep -E "ERROR\|WARN" app.log` | Use extended regex (match multiple patterns) |
 
 ---
 
