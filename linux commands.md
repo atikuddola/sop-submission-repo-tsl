@@ -446,10 +446,4 @@
 
 ---
 
-|------|---------|-------------|
-| *(no flags)* | `pwd` | Print the full absolute path of current directory |
-| `-P` | `pwd -P` | Print physical path, resolving any symlinks |
-| `-L` | `pwd -L` | Print logical path, including symlinks (default behavior) |
-
----
 
