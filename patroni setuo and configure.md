@@ -6,6 +6,9 @@
 > **OS:** RHEL 9 / Rocky Linux 9
 
 ---
+<img width="972" height="712" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/59787df7-211a-4f42-8fad-4e0cc4d18a88" />
+
+---
 
 ## Table of Contents
 
