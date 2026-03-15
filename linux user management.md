@@ -217,5 +217,3 @@ sudo -l -U username           # Check sudo rights
 ```
 
 ---
-
-*SOP Version 1.0 — Linux User Management*
