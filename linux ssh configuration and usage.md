@@ -3,16 +3,6 @@
 
 ---
 
-## Overview
-
-| Item | Detail |
-|------|--------|
-| **Purpose** | Install, configure, and secure SSH on Rocky Linux |
-| **Target Systems** | Rocky Linux 8 / 9 |
-| **Applies To** | Linux Sysadmins, DevOps Engineers, DBAs |
-
----
-
 ## Background
 
 **What:** SSH (Secure Shell) is the standard protocol for remote access to Linux servers. All communication is encrypted.
@@ -28,35 +18,7 @@
 
 ---
 
-## Prerequisites
-
-| Requirement | Detail |
-|-------------|--------|
-| OS | Rocky Linux 8 / 9 |
-| User | Root or sudo privileges |
-| Network | Port 22 accessible |
-| Client | Linux/macOS terminal, Windows PuTTY/WSL |
-
----
-
-## 1. Install & Enable SSH Server
-
-```bash
-sudo dnf update -y
-sudo dnf install -y openssh-server openssh-clients
-
-sudo systemctl start sshd
-sudo systemctl enable sshd
-
-# Verify
-sudo systemctl status sshd
-```
-
-Expected: `Active: active (running)`
-
----
-
-## 2. Password Authentication
+## 1. Password Authentication
 
 ### Server Side — Enable Password Auth
 
@@ -80,23 +42,23 @@ sudo systemctl restart sshd
 ### Create a User (if needed)
 
 ```bash
-sudo useradd -m samrat
-sudo passwd samrat
+sudo useradd -m auddola
+sudo passwd auddola
 ```
 
 ### Connect from Client
 
 ```bash
-ssh samrat@<SERVER_IP>
+ssh auddola@<SERVER_IP>
 # Example:
-ssh samrat@192.168.226.131
+ssh auddola@192.168.226.98
 ```
 
 You will be prompted for the user's password.
 
 ---
 
-## 3. Key-Based Authentication
+## 2. Key-Based Authentication
 
 ### Step 1 — Generate Key Pair (Client Side)
 
@@ -130,10 +92,10 @@ Press `Enter` for default path. Always set a **passphrase** when prompted.
 ### Step 2 — Copy Public Key to Server
 
 ```bash
-ssh-copy-id samrat@192.168.226.131
+ssh-copy-id auddola@192.168.226.98
 
 # Specify key explicitly
-ssh-copy-id -i ~/.ssh/id_ed25519.pub samrat@192.168.226.131
+ssh-copy-id -i ~/.ssh/id_ed25519.pub auddola@192.168.226.98
 ```
 
 This appends your public key to `~/.ssh/authorized_keys` on the server.
@@ -167,15 +129,15 @@ sudo systemctl restart sshd
 ### Step 5 — Connect Using Key
 
 ```bash
-ssh samrat@192.168.226.131
+ssh auddola@192.168.226.98
 
 # Specify key explicitly
-ssh -i ~/.ssh/id_ed25519 samrat@192.168.226.131
+ssh -i ~/.ssh/id_ed25519 auddola@192.168.226.98
 ```
 
 ---
 
-## 4. Harden SSH Configuration
+## 3. Harden SSH Configuration
 
 Edit `/etc/ssh/sshd_config` and apply:
 
@@ -196,7 +158,7 @@ sudo systemctl restart sshd  # Apply only if no errors
 
 ---
 
-## 5. Firewall Configuration
+## 4. Firewall Configuration
 
 ```bash
 sudo firewall-cmd --permanent --add-service=ssh     # Allow port 22
@@ -206,7 +168,7 @@ sudo firewall-cmd --reload
 
 ---
 
-## 6. Troubleshooting
+## 5. Troubleshooting
 
 **Fix permission issues (client side):**
 
@@ -281,4 +243,4 @@ sudo firewall-cmd --reload
 
 ---
 
-*SOP Version 1.0 — SSH Configuration on Rocky Linux*
+
