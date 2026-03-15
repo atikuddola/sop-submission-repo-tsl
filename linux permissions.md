@@ -316,4 +316,4 @@ umask 022              # Set umask for current session
 
 ---
 
-*SOP Version 1.0 — Linux Permission Management*
+
