@@ -4,8 +4,7 @@
 **OS:** Rocky Linux | **Version:** ScyllaDB 6.2.3
 **Nodes:** `.34` · `.35` · `.237`
 ---
-<img width="124" height="150" alt="scylladb_cluster_architecture" src="https://github.com/user-attachments/assets/f6482502-798f-4aac-bb97-7ec2d3d0c692" />
----
+<img width="748" height="902" alt="svgviewer-png-output" src="https://github.com/user-attachments/assets/3a171bf2-f421-4dd8-873e-2f22853fb508" />
 
 ## 1. Pre-installation
 
