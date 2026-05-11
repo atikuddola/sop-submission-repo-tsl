@@ -3,10 +3,10 @@
 
 **OS:** Rocky Linux | **Version:** ScyllaDB 6.2.3
 **Nodes:** `.34` · `.35` · `.237`
----
+
 ## Architectural Diagram
 <img width="748" height="902" alt="svgviewer-png-output (1)" src="https://github.com/user-attachments/assets/becb636a-ad57-49fc-995d-fe21db6a5803" />
----
+
 
 ## 1. Pre-installation
 
